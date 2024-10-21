@@ -275,6 +275,14 @@ Transcripts alignments, alignAssembly.config, set up the mysql database name; CP
 ```shell
 Launch_PASA_pipeline.pl -c alignAssembly.config -C -R -g genome.fa -t transcripts.fasta.clean -T -u transcripts.fasta --ALIGNERS blat --CPU 16
 
+## define the sqlite
+#creat the sqlite database
+sqlite3 pasa.sqlite
+#database settings for pasa.alignAssembly.Template.txt
+DATABASE=/home/houzhuangwei/test/pasa/pasa.sqlite
+#save the settings
+mv pasa.alignAssembly.Template.txt alignAssembly.config
+
 # two cycles !!! of annotation loading, annotation comparison, and annotation updates
 # check gff3
 misc_utilities/pasa_gff3_validator.pl species.evm.gff3

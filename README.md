@@ -279,7 +279,7 @@ Launch_PASA_pipeline.pl -c alignAssembly.config -C -R -g genome.fa -t transcript
 #creat the sqlite database
 sqlite3 pasa.sqlite
 #database settings for pasa.alignAssembly.Template.txt
-DATABASE=/home/houzhuangwei/test/pasa/pasa.sqlite
+DATABASE=/home/ug1200/pasa.sqlite
 #save the settings
 mv pasa.alignAssembly.Template.txt alignAssembly.config
 
